@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "HACKATHON_KBN_backend": {
+      "main": "src/HACKATHON_KBN_backend/main.mo",
+      "type": "motoko"
+    },
+    "HACKATHON_KBN_frontend": {
+      "dependencies": [
+        "HACKATHON_KBN_backend"
+      ],
+      "source": [
+        "src/HACKATHON_KBN_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "HACKATHON_KBN_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
